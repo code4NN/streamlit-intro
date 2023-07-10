@@ -1,6 +1,5 @@
 import streamlit as st
 
-
 # sample example
 st.header(":green[Method 1 to greet]")
 userintput = st.text_input("Enter Name")
