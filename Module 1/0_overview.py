@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 def showthis():
     # Title
@@ -60,25 +60,25 @@ st.title('Hello, Streamlit!')
     # Plotting
     st.header("Plotting")
 
-    # Line chart
-    x = np.linspace(0, 10, 100)
-    y = np.sin(x)
-    plt.plot(x, y)
-    st.pyplot()
+    # # Line chart
+    # x = np.linspace(0, 10, 100)
+    # y = np.sin(x)
+    # plt.plot(x, y)
+    # st.pyplot()
 
-    if not st.checkbox(":green[Go 2 next feature]",key='9'):
-        return
-    # Bar chart
-    data = {
-        "Category": ["A", "B", "C", "D"],
-        "Values": [10, 15, 7, 12]
-    }
-    df = pd.DataFrame(data)
-    st.bar_chart(df.set_index("Category"))
+    # if not st.checkbox(":green[Go 2 next feature]",key='9'):
+    #     return
+    # # Bar chart
+    # data = {
+    #     "Category": ["A", "B", "C", "D"],
+    #     "Values": [10, 15, 7, 12]
+    # }
+    # df = pd.DataFrame(data)
+    # st.bar_chart(df.set_index("Category"))
 
-    if not st.checkbox(":green[Go 2 next feature]",key='10'):
-        return
-    # Interactive widgets
+    # if not st.checkbox(":green[Go 2 next feature]",key='10'):
+    #     return
+    # # Interactive widgets
     st.header("Interactive Widgets")
 
     # Slider
